@@ -2,9 +2,9 @@ const path = require("path");
 const IS_PROD = ["production", "prod"].includes(process.env.NODE_ENV);
 const resolve = (dir) => path.join(__dirname, dir);
 module.exports = {
-  publicPath: "/",
+  publicPath: "./",
   indexPath: "index.html",
-  assetsDir: "",
+  assetsDir: "assets",
   lintOnSave: false,
   runtimeCompiler: true,
   parallel: require("os").cpus().length > 1,
