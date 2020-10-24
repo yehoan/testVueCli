@@ -28,7 +28,10 @@ module.exports = {
       });
   },
   css: {
-    requireModuleExtension: false
+    requireModuleExtension: true, // js import 时将所有的 *.(css|scss|sass|less|styl(us)?) 文件
+    // 视为 CSS Modules 模块
+    extract: IS_PROD, // 将组件中的 CSS 提取至一个独立的 CSS 文件中
+    sourceMap: !IS_PROD
   },
   devServer: {
     overlay: {
