@@ -4,7 +4,7 @@ const resolve = (dir) => path.join(__dirname, dir);
 module.exports = {
   publicPath: "./",
   indexPath: "index.html",
-  assetsDir: "assets",
+  assetsDir: "",
   lintOnSave: false,
   runtimeCompiler: true,
   parallel: require("os").cpus().length > 1,
