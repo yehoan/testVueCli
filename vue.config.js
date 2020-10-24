@@ -28,7 +28,6 @@ module.exports = {
       });
   },
   css: {
-    extract: IS_PROD,
     requireModuleExtension: false
   },
   devServer: {
